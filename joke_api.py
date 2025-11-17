@@ -1,4 +1,5 @@
 import requests
+import random
 
 def get_random_joke():
     user_input = input("What would you like to search for: ")
@@ -22,3 +23,4 @@ def get_random_joke():
     else:
         print(f"sorry couldn't fine any jokes about {user_input}")
     return one_rand_joke
+
