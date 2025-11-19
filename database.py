@@ -1,8 +1,6 @@
 import sqlite3
-from joke_api import get_random_joke
 
 DB_FILE = "funny.db"
-
 
 def init_db():
     with sqlite3.connect(DB_FILE) as conn:
@@ -19,5 +17,3 @@ def save_to_db(jokes):
         c.execute("INSERT INTO jokes (Joke_text) VALUES (?)",(jokes,))
         conn.commit()
 
-joke1 = get_random_joke()
-save_to_db(joke1)

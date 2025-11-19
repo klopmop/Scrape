@@ -1,6 +1,4 @@
 import pathlib
-from joke_api import get_random_joke
-
 
 FILE = "random_joke.txt"
 

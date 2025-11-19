@@ -24,7 +24,3 @@ def get_random_joke():
         print(f"sorry couldn't fine any jokes about {user_input}")
 
     return one_rand_joke
-
-
-
-get_random_joke()
